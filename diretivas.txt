@@ -1,0 +1,58 @@
+# Wumpus World
+
+# # Ao nascer
+# * Estamos virados pra norte
+# * Recebemos dados do sensor ao nascer
+# * Não sabemos tamanho do mapa
+# * Não sabemos posição atual
+# * Problema 1: Como enumerar as posições para poder jogar no solver?
+# * Considerar que estamos na posição 0,0 e receber os primeiros inputs
+# * Vizinhos: 2, 3, 4, 5
+# * Para cada posição x,y definir variáveis dos sensores
+# * Paredes no meio do mapa
+
+# # Sensor (ex.: 10100)
+# * Cheiro
+# * Brisa
+# * Ouro (Brilho)
+# * Bater
+# * Som do Wumpus
+
+# # Comandos
+# * L <- vira 90º Esquerda
+# * R <- vira 90º Direita
+# * M <- anda pra frente
+# * E <- Sai do mapa //ação
+# * P <- Pega ouro //ação
+# * S <- Atira flecha pra FRENTE // ação
+    - flecha atravessa paredes
+
+# # Direção
+# 0 - norte
+# 1 - leste
+# 2 - sul
+# 3 - oeste
+
+se virar para esquerda
+(direcao - 1 + 4) % 4 
+
+se virar para Direita
+(direcao + 1) % 4 
+
+
+#movimenta
+    (posicao, sensor, direcao, acao)
+    switch sensor
+        temOuro:
+            coleta
+        temBrisa:
+        
+        temCheiro:
+
+        bateu:
+
+        gritou:
+
+
+
+
