@@ -19,18 +19,25 @@
     (mulher mulher2)
     (mulher mulher3)
     (mulher mulher4)
+
     (quartoQuadruplo quarto1)
-    (quartoCasal quarto2)
-    (quartoTriplo quarto3)
-    (quartoDuplo quarto4)
-    (quartoDuplo quarto5)
-    (quartoDuplo quarto6)
     (= (custo quarto1) 1230)
+    
+    (quartoCasal quarto2)
     (= (custo quarto2) 500)
+    
+    (quartoTriplo quarto3)
     (= (custo quarto3) 400)
+    
+    (quartoDuplo quarto4)
     (= (custo quarto4) 300)
+    
+    (quartoDuplo quarto5)
     (= (custo quarto5) 200)
+    
+    (quartoDuplo quarto6)
     (= (custo quarto6) 100)
+    
     (= (total-cost) 0)
   )
   (:goal
