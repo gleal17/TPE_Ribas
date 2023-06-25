@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int qtd, pontuacao;
+    int qtd;
     char res;
     vector<string> homens;
     vector<string> mulheres;
@@ -12,7 +12,7 @@ int main()
     vector<pair<string, string>> casais;
     vector<pair<string, string>> afinidade;
     vector<int> pontuacaoAfinidade;
-    string nome, nome2;
+    string nome, nome2, linha, afinidadeString;
     pair<char, int> quarto;
     vector<pair<char, int>> quartos;
 
@@ -22,26 +22,24 @@ int main()
         cin >> quarto.first >> quarto.second;
         quartos.push_back(quarto);
     }
-    cin >> qtd >> res;
 
+    cin >> qtd >> res;
     if (res == 'M')
         for (int i = 1; i <= qtd; i++)
         {
             cin >> nome;
             homens.push_back(nome);
-            if (i == qtd)
-                cin >> qtd >> res;
         }
 
+    cin >> qtd >> res;
     if (res == 'F')
         for (int i = 1; i <= qtd; i++)
         {
             cin >> nome;
             mulheres.push_back(nome);
-            if (i == qtd)
-                cin >> qtd >> res;
         }
 
+    cin >> qtd >> res;
     if (res == 'C')
         for (int i = 1; i <= qtd; i++)
         {
@@ -49,18 +47,39 @@ int main()
             dupla.first = nome;
             dupla.second = nome2;
             casais.push_back(dupla);
-            if (i == qtd)
-                cin >> qtd;
         }
 
-    // for (int i = 0; i < qtd; i++)
-    // {
-    //     cin >> nome >> res >> nome2 >> pontuacao;
-    //     dupla.first = nome;
-    //     dupla.second = nome2;
-    //     afinidade.push_back(dupla);
-    //     pontuacaoAfinidade.push_back(pontuacao);
-    // }
+    scanf("%d%*c", &qtd);
+    int percorredorDeLinha;
+    for (int i = 0; i < qtd; i++)
+    {
+        nome = "";
+        linha = "";
+        getline(cin, linha);
+        for (percorredorDeLinha = 0; linha[percorredorDeLinha] != ' '; percorredorDeLinha++)
+        {
+            nome += linha[percorredorDeLinha];
+        }
+        percorredorDeLinha += 3;
+        dupla.first = nome;
+        nome = "";
+        afinidadeString = "";
+        for (; percorredorDeLinha < linha.length(); percorredorDeLinha++)
+        {
+            if (linha[percorredorDeLinha] == ' ')
+            {
+                for (percorredorDeLinha += 1; percorredorDeLinha < linha.length() && linha[percorredorDeLinha] != ' '; percorredorDeLinha++)
+                    afinidadeString += linha[percorredorDeLinha];
+                dupla.second = nome;
+                afinidade.push_back(dupla);
+                pontuacaoAfinidade.push_back(stoi(afinidadeString));
+                nome = "";
+                afinidadeString = "";
+            }
+            else
+                nome += linha[percorredorDeLinha];
+        }
+    }
     printf("(define (problem teste001)\n(:domain hotel_domain)\n");
     printf("(:objects\n");
     for (int i = 0; i < homens.size(); i++)
@@ -86,6 +105,9 @@ int main()
 
     for (int i = 0; i < casais.size(); i++)
         cout << "(casal " << casais[i].first << " " << casais[i].second << ")\n";
+
+    for (int i = 0; i < afinidade.size(); i++)
+        cout << "(= (afinidade " << afinidade[i].first << " " << afinidade[i].second << ") " << pontuacaoAfinidade[i] << ")\n";
 
     for (int i = 0; i < quartos.size(); i++)
         switch (quartos[i].first)

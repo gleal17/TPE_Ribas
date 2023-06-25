@@ -19,6 +19,7 @@
 
     (:functions
         (custo ?q - quarto) - number
+        (afinidade ?p ?p - pessoa) - number
         (total-cost) - number
     )
 
