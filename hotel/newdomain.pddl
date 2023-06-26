@@ -58,20 +58,10 @@
       (not (alojada ?p1))
       (not (alojada ?p2))
       (not (ocupado ?q))
+      (quartoDuplo ?q)
       (or
-        (and
-          (homem ?p1)
-          (homem ?p2)
-        )
-        (and
-          (not (homem ?p1))
-          (not (homem ?p2))
-        )
-      )
-      (or
-        (quartoDuplo ?q)
-        (quartoTriplo ?q)
-        (quartoQuadruplo ?q)
+        (and (homem ?p1)(homem ?p2))
+        (and (not (homem ?p1)) (not (homem ?p2)))
       )
     )
     :effect (and
