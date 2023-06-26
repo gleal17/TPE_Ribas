@@ -1,5 +1,5 @@
 (define (domain hotel_domain)
-    (:requirements :strips :typing :negative-preconditions :equality)
+    (:requirements :strips :typing :negative-preconditions :equality :fluents :disjunctive-preconditions)
 
     (:types
         pessoa quarto - objects

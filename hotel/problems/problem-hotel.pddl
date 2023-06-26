@@ -38,8 +38,7 @@
     (quartoDuplo quarto6)
     (= (custo quarto6) 100)
     
-    (= (total-cost) 0)
-  )
+    (= (total-cost) 0))
   (:goal
     (and
       (alojada homem1)
@@ -53,6 +52,5 @@
     )
   )
 
-  (:metric minimize
-    (total-cost))
+  (:metric minimize (total-cost))
 )
