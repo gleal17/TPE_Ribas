@@ -1,58 +1,134 @@
 (define (problem teste001)
   (:domain hotel_domain)
   (:objects
-    homem1 homem2 homem3 homem4 - pessoa
-    mulher1 mulher2 mulher3 mulher4 - pessoa
-    quarto1 quarto2 quarto3 quarto4 quarto5 quarto6 - quarto
+    Bruno Otaviano Casimiro Igor DavyJones Iasmine Chris Vanessa Rose - pessoa
+    quarto1 quarto2 quarto3 quarto4 quarto5 quarto6 quarto7 quarto8 quarto9 quarto10 - quarto
   )
-
   (:init
-    (casal homem1 mulher1)
-    (casal homem2 mulher2)
-    (casal homem3 mulher3)
-    (casal homem4 mulher4)
-    (homem homem1)
-    (homem homem2)
-    (homem homem3)
-    (homem homem4)
-    (mulher mulher1)
-    (mulher mulher2)
-    (mulher mulher3)
-    (mulher mulher4)
+    ;; PESSOAS 
+    (homem Bruno)
+    (homem Otaviano)
+    (homem Casimiro)
+    (homem Igor)
+    (homem DavyJones)
+    
+    ;; CASAIS
+    (casal Bruno Rose)
+    (casal Otaviano Vanessa)
 
-    (quartoQuadruplo quarto1)
-    (= (custo quarto1) 1230)
-    
+    ;; AFINIDADES ENTRE PESSOAS (DEFAULT 50)
+    (= (afinidade Bruno Casimiro) 20)
+    (= (afinidade Bruno Otaviano) 50)
+    (= (afinidade Bruno Igor) 50)
+    (= (afinidade Bruno DavyJones) 50)
+    (= (afinidade Bruno Iasmine) 50)
+    (= (afinidade Bruno Chris) 50)
+    (= (afinidade Bruno Vanessa) 50)
+    (= (afinidade Bruno Rose) 0)
+
+    (= (afinidade Casimiro Bruno) 50)
+    (= (afinidade Casimiro Otaviano) 50)
+    (= (afinidade Casimiro Igor) 0)
+    (= (afinidade Casimiro DavyJones) 2)
+    (= (afinidade Casimiro Iasmine) 50)
+    (= (afinidade Casimiro Chris) 50)
+    (= (afinidade Casimiro Vanessa) 50)
+    (= (afinidade Casimiro Rose) 50)
+
+    (= (afinidade Otaviano Bruno) 50)
+    (= (afinidade Otaviano Casimiro) 50)
+    (= (afinidade Otaviano Igor) 40)
+    (= (afinidade Otaviano Iasmine) 65)
+    (= (afinidade Otaviano DavyJones) 50)
+    (= (afinidade Otaviano Chris) 50)
+    (= (afinidade Otaviano Vanessa) 50)
+    (= (afinidade Otaviano Rose) 50)
+
+    (= (afinidade Igor Bruno) 50)
+    (= (afinidade Igor Casimiro) 50)
+    (= (afinidade Igor Otaviano) 40)
+    (= (afinidade Igor DavyJones) 90)
+    (= (afinidade Igor Iasmine) 40)
+    (= (afinidade Igor Chris) 50)
+    (= (afinidade Igor Vanessa) 50)
+    (= (afinidade Igor Rose) 50)
+
+    (= (afinidade DavyJones Bruno) 70)
+    (= (afinidade DavyJones Casimiro) 2)
+    (= (afinidade DavyJones Otaviano) 50)
+    (= (afinidade DavyJones Igor) 70)
+    (= (afinidade DavyJones Iasmine) 50)
+    (= (afinidade DavyJones Chris) 50)
+    (= (afinidade DavyJones Vanessa) 50)
+    (= (afinidade DavyJones Rose) 50)
+
+    (= (afinidade Iasmine Bruno) 50)
+    (= (afinidade Iasmine Casimiro) 50)
+    (= (afinidade Iasmine Otaviano) 65)
+    (= (afinidade Iasmine Igor) 40)
+    (= (afinidade Iasmine DavyJones) 50)
+    (= (afinidade Iasmine Chris) 90)
+    (= (afinidade Iasmine Vanessa) 30)
+    (= (afinidade Iasmine Rose) 50)
+
+    (= (afinidade Chris Bruno) 50)
+    (= (afinidade Chris Casimiro) 50)
+    (= (afinidade Chris Otaviano) 50)
+    (= (afinidade Chris Igor) 50)
+    (= (afinidade Chris DavyJones) 50)
+    (= (afinidade Chris Iasmine) 90)
+    (= (afinidade Chris Vanessa) 45)
+    (= (afinidade Chris Rose) 90)
+
+    (= (afinidade Vanessa Bruno) 50)
+    (= (afinidade Vanessa Casimiro) 50)
+    (= (afinidade Vanessa Otaviano) 100)
+    (= (afinidade Vanessa Igor) 50)
+    (= (afinidade Vanessa DavyJones) 50)
+    (= (afinidade Vanessa Iasmine) 60)
+    (= (afinidade Vanessa Chris) 60)
+    (= (afinidade Vanessa Rose) 70)
+
+    (= (afinidade Rose Bruno) 0)
+    (= (afinidade Rose Casimiro) 50)
+    (= (afinidade Rose Otaviano) 50)
+    (= (afinidade Rose Igor) 50)
+    (= (afinidade Rose DavyJones) 70)
+    (= (afinidade Rose Iasmine) 50)
+    (= (afinidade Rose Chris) 80)
+    (= (afinidade Rose Vanessa) 70)
+
+    ;; TIPOS DE QUARTOS
+    (quartoCasal quarto1)
     (quartoCasal quarto2)
-    (= (custo quarto2) 500)
-    
-    (quartoTriplo quarto3)
-    (= (custo quarto3) 400)
-    
+    (quartoCasal quarto3)
     (quartoDuplo quarto4)
-    (= (custo quarto4) 300)
-    
     (quartoDuplo quarto5)
+    (quartoTriplo quarto6)
+    (quartoTriplo quarto7)
+    (quartoTriplo quarto8)
+    (quartoQuadruplo quarto9)
+    (quartoQuadruplo quarto10)
+
+    ;; CUSTOS DOS QUARTOS
+    (= (custo quarto1) 100)
+    (= (custo quarto2) 150)
+    (= (custo quarto3) 1000)
+    (= (custo quarto4) 150)
     (= (custo quarto5) 200)
-    
-    (quartoDuplo quarto6)
-    (= (custo quarto6) 100)
-    
+    (= (custo quarto6) 250)
+    (= (custo quarto7) 600)
+    (= (custo quarto8) 250)
+    (= (custo quarto9) 360)
+    (= (custo quarto10) 990)
+
+    ;;FUNCTIONS DE CUSTO TOTAL E AFINIDADE
     (= (total-cost) 0)
   )
   (:goal
     (and
-      (alojada homem1)
-      (alojada homem2)
-      (alojada homem3)
-      (alojada homem4)
-      (alojada mulher1)
-      (alojada mulher2)
-      (alojada mulher3)
-      (alojada mulher4)
+      (forall (?p - pessoa) (alojada ?p))
     )
   )
-
-  (:metric minimize
-    (total-cost))
+    (:metric minimize (total-cost))
 )

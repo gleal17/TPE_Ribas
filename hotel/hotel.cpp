@@ -10,8 +10,8 @@ int main()
     vector<string> mulheres;
     pair<string, string> dupla;
     vector<pair<string, string>> casais;
-    vector<pair<string, string>> afinidade;
     vector<int> pontuacaoAfinidade;
+    map<pair<string, string>, int> afinidadeGeral;
     string nome, nome2, linha, afinidadeString;
     pair<char, int> quarto;
     vector<pair<char, int>> quartos;
@@ -47,6 +47,11 @@ int main()
             dupla.first = nome;
             dupla.second = nome2;
             casais.push_back(dupla);
+            afinidadeGeral.insert(make_pair(dupla, 100));
+            dupla.first = nome2;
+            dupla.second = nome;
+            casais.push_back(dupla);
+            afinidadeGeral.insert(make_pair(dupla, 100));
         }
 
     scanf("%d%*c", &qtd);
@@ -71,8 +76,7 @@ int main()
                 for (percorredorDeLinha += 1; percorredorDeLinha < linha.length() && linha[percorredorDeLinha] != ' '; percorredorDeLinha++)
                     afinidadeString += linha[percorredorDeLinha];
                 dupla.second = nome;
-                afinidade.push_back(dupla);
-                pontuacaoAfinidade.push_back(stoi(afinidadeString));
+                afinidadeGeral.insert(make_pair(dupla, stoi(afinidadeString)));
                 nome = "";
                 afinidadeString = "";
             }
@@ -100,14 +104,75 @@ int main()
     for (int i = 0; i < homens.size(); i++)
         cout << "(homem " << homens[i] << ")\n";
 
-    for (int i = 0; i < mulheres.size(); i++)
-        cout << "(mulher " << mulheres[i] << ")\n";
+    // for (int i = 0; i < mulheres.size(); i++)
+    // cout << "(mulher " << mulheres[i] << ")\n";
 
     for (int i = 0; i < casais.size(); i++)
         cout << "(casal " << casais[i].first << " " << casais[i].second << ")\n";
 
-    for (int i = 0; i < afinidade.size(); i++)
-        cout << "(= (afinidade " << afinidade[i].first << " " << afinidade[i].second << ") " << pontuacaoAfinidade[i] << ")\n";
+    for (int i = 0; i < homens.size(); i++)
+    {
+        for (int j = 0; j < homens.size(); j++)
+        {
+            dupla.first = homens[i];
+            dupla.second = homens[j];
+            if (afinidadeGeral.find(dupla) != afinidadeGeral.end())
+            {
+                cout << "(= (afinidade " << homens[i] << " " << homens[j] << ") " << afinidadeGeral[dupla] << ")\n";
+            }
+            else
+            {
+                cout << "(= (afinidade " << homens[i] << " " << homens[j] << ") "
+                     << "50)\n";
+            }
+        }
+        for (int j = 0; j < mulheres.size(); j++)
+        {
+            dupla.first = homens[i];
+            dupla.second = mulheres[j];
+            if (afinidadeGeral.find(dupla) != afinidadeGeral.end())
+            {
+                cout << "(= (afinidade " << homens[i] << " " << mulheres[j] << ") " << afinidadeGeral[dupla] << ")\n";
+            }
+            else
+            {
+                cout << "(= (afinidade " << homens[i] << " " << mulheres[j] << ") "
+                     << "0)\n";
+            }
+        }
+    }
+
+    for (int i = 0; i < mulheres.size(); i++)
+    {
+        for (int j = 0; j < homens.size(); j++)
+        {
+            dupla.first = mulheres[i];
+            dupla.second = homens[j];
+            if (afinidadeGeral.find(dupla) != afinidadeGeral.end())
+            {
+                cout << "(= (afinidade " << mulheres[i] << " " << homens[j] << ") " << afinidadeGeral[dupla] << ")\n";
+            }
+            else
+            {
+                cout << "(= (afinidade " << mulheres[i] << " " << homens[j] << ") "
+                     << "50)\n";
+            }
+        }
+        for (int j = 0; j < mulheres.size(); j++)
+        {
+            dupla.first = mulheres[i];
+            dupla.second = mulheres[j];
+            if (afinidadeGeral.find(dupla) != afinidadeGeral.end())
+            {
+                cout << "(= (afinidade " << mulheres[i] << " " << mulheres[j] << ") " << afinidadeGeral[dupla] << ")\n";
+            }
+            else
+            {
+                cout << "(= (afinidade " << mulheres[i] << " " << mulheres[j] << ") "
+                     << "0)\n";
+            }
+        }
+    }
 
     for (int i = 0; i < quartos.size(); i++)
         switch (quartos[i].first)
@@ -127,6 +192,7 @@ int main()
         default:
             break;
         }
+    printf("(= (total-cost) 0)\n(= (total-afinidade) 0)");
     cout << ")\n";
     // aqui acaba o estado inicial
     printf("(:goal\n(and\n");
@@ -136,7 +202,7 @@ int main()
     for (int i = 0; i < mulheres.size(); i++)
         cout << "(alojada " << mulheres[i] << ")\n";
     printf(")\n)\n");
-    printf("(:metric minimize\n(total-cost)))\n");
+    printf("(:metric minimize (+ (total-cost) (* (total-afinidade) -1))))");
 
     return 0;
 }
