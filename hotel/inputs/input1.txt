@@ -1,0 +1,20 @@
+8
+C 100
+D 150
+T 200
+Q 250
+C 120
+D 180
+T 230
+Q 300
+3 M
+Pedro Bento Charlie
+5 F
+Ana Sophia Olivia Bruna Lilian
+1 C
+Pedro Ana
+4
+Pedro : Bento 70 Charlie 50 Olivia 80
+Bento : Pedro 60 Charlie 70 Ana 90
+Charlie : Pedro 40 Bento 80 Ana 50
+Ana : Pedro 90 Bento 80 Charlie 60 Olivia 70

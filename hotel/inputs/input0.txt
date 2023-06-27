@@ -1,0 +1,27 @@
+10
+C 120
+D 180
+T 220
+Q 350
+C 150
+D 200
+T 250
+Q 400
+C 130
+D 190
+3 M
+Joao Miguel Daniel
+4 F
+Emily Luna Jessica Olivia
+1 C
+Joao Emily
+10
+Joao : Miguel 30 Daniel 60 Olivia 80
+Miguel : Emily 90 Luna 70
+Daniel : Joao 50 Miguel 40 Emily 30
+Emily : Joao 80 Daniel 70 Olivia 90
+Luna : Miguel 60 Olivia 80
+Jessica : Emily 50 Luna 90 Olivia 70
+Olivia : Daniel 40 Emily 80 Luna 80 Jessica 70
+Chris : Joao 70 Emily 60 Daniel 80 Olivia 90
+Sophie : Joao 80 Miguel 90 Emily 70 Luna 60

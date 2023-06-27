@@ -1,0 +1,44 @@
+20
+C 100
+D 150
+T 200
+Q 250
+C 120
+D 180
+T 230
+Q 300
+C 80
+D 130
+T 180
+Q 220
+C 90
+D 140
+T 190
+Q 240
+C 110
+D 160
+T 210
+Q 270
+10 M
+Adam Ben Charlie David Ethan Felix Gabriel Henry Isaac Jack
+10 F
+Emily Sophia Olivia Ava Lily Mia Natalie Olivia Victoria
+5 C
+Adam Emily
+Ben Sophia
+Charlie Olivia
+David Ava
+Ethan Lily
+12
+Adam : Ben 70 Charlie 50 Olivia 80
+Ben : Adam 60 Charlie 70 Emily 90
+Charlie : Adam 40 Ben 80 Emily 50
+David : Ethan 70 Felix 60 Gabriel 80 Henry 70
+Ethan : David 80 Felix 60 Gabriel 70 Henry 90
+Felix : David 70 Ethan 70 Gabriel 80 Henry 60
+Gabriel : David 80 Ethan 70 Felix 90 Henry 70
+Henry : David 70 Ethan 90 Felix 70 Gabriel 80
+Isaac : Jack 50 Lily 60 Mia 70 Natalie 80
+Jack : Adam 70 Isaac 80 Lily 60 Mia 70
+Sophia : Ava 60 Emily 80 Lily 70 Olivia 80
+Olivia : Ava 70 Charlie 80 Emily 90 Sophia 70

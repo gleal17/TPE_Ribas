@@ -1,0 +1,119 @@
+40
+C 100
+D 150
+T 200
+Q 250
+C 120
+D 180
+T 230
+Q 300
+C 80
+D 130
+T 180
+Q 220
+C 90
+D 140
+T 190
+Q 240
+C 110
+D 160
+T 210
+Q 270
+C 100
+D 150
+T 200
+Q 250
+C 120
+D 180
+T 230
+Q 300
+C 80
+D 130
+T 180
+Q 220
+C 90
+D 140
+T 190
+Q 240
+C 110
+D 160
+T 210
+Q 270
+C 100
+D 150
+T 200
+Q 250
+C 120
+D 180
+T 230
+Q 300
+C 80
+D 130
+T 180
+Q 220
+C 90
+D 140
+T 190
+Q 240
+C 110
+D 160
+T 210
+Q 270
+40 M
+Adam Benjamin Charlie Daniel Ethan Felix Gabriel Henry Isaac Jack Liam Mason Noah Oliver William Alexander Andrew Anthony Caleb Christopher David Elijah Jacob James John Joseph Joshua Matthew Michael Nathan Nicholas Robert Samuel Thomas Tyler Benjamin Daniel Ethan Gabriel Isaac James Liam Mason
+40 F
+Abigail Amelia Ava Charlotte Chloe Elizabeth Ella Emily Emma Grace Hannah Isabella Lily Madison Mia Natalie Olivia Sophia Zoe Addison Alyssa Audrey Brooklyn Claire Eleanor Evelyn Hailey Harper Julia Layla Leah Lily Lucy Maya Natalie Penelope Samantha Sarah Scarlett Victoria Zoey
+10 C
+Adam Abigail
+Benjamin Amelia
+Charlie Ava
+Daniel Charlotte
+Ethan Chloe
+Felix Elizabeth
+Gabriel Ella
+Henry Emily
+Isaac Emma
+Jack Grace
+Adam: Ava 80 Isabella 30 Emily 90 Lily 40 Harper
+Benjamin: Abigail 70 Charlotte 20 Ella 80 Grace 10 Olivia
+Charlie: Amelia 40 Elizabeth 90 Emma 20 Hannah 70 Mia
+Daniel: Chloe 60 Isabella 30 Lily 40 Natalie 20 Zoe
+Ethan: Emily 90 Hannah 70 Olivia 60 Zoe 80 Sophia
+Felix: Emily 90 Isabella 30 Lily 40 Mia 70 Zoe
+Gabriel: Ava 80 Charlotte 20 Ella 80 Grace 10 Sophia
+Henry: Amelia 40 Elizabeth 90 Hannah 70 Olivia 60 Zoe
+Isaac: Ava 80 Chloe 60 Ella 80 Natalie 20 Zoe
+Jack: Abigail 70 Emma 20 Grace 10 Mia 70 Sophia
+Liam: Amelia 40 Charlotte 20 Emily 90 Isabella 30 Olivia
+Mason: Chloe 60 Ella 80 Hannah 70 Lily 40 Zoe
+Noah: Ava 80 Elizabeth 90 Mia 40 Natalie 20 Sophia
+Oliver: Abigail 70 Emily 90 Grace 10 Olivia 60 Zoe
+William: Amelia 40 Charlotte 20 Isabella 30 Lily 40 Sophia
+Alexander: Ava 80 Elizabeth 90 Hannah 70 Mia 40 Zoe
+Andrew: Abigail 70 Chloe 60 Ella 80 Olivia 60 Sophia
+Anthony: Amelia 40 Emily 90 Isabella 30 Natalie 20 Zoe
+Caleb: Ava 80 Charlotte 20 Grace 10 Hannah 70 Lily
+Christopher: Amelia 40 Chloe 60 Ella 80 Mia 70 Sophia
+David: Abigail 70 Elizabeth 90 Emily 90 Olivia 60 Zoe
+Elijah: Amelia 40 Charlotte 20 Hannah 70 Mia 70 Sophia
+Jacob: Ava 80 Chloe 60 Ella 80 Lily 40 Zoe
+James: Abigail 70 Elizabeth 90 Emily 90 Grace 10 Olivia
+John: Amelia 40 Charlotte 20 Isabella 30 Hannah 70 Zoe
+Joseph: Ava 80 Chloe 60 Ella 80 Mia 70 Sophia
+Joshua: Abigail 70 Elizabeth 90 Emily 90 Lily 40 Zoe
+Matthew: Amelia 40 Charlotte 20 Grace 10 Hannah 70 Olivia
+Michael: Ava 80 Chloe 60 Ella 80 Mia 70 Sophia
+Nathan: Abigail 70 Elizabeth 90 Emily 90 Hannah 70 Zoe
+Nicholas: Amelia 40 Charlotte 20 Isabella 30 Lily 40 Olivia
+Robert: Ava 80 Chloe 60 Ella 80 Mia 70 Zoe
+Samuel: Abigail 70 Elizabeth 90 Grace 10 Hannah 70 Sophia
+Thomas: Amelia 40 Charlotte 20 Emily 90 Lily 40 Zoe
+Tyler: Ava 80 Chloe 60 Ella 80 Mia 70 Zoe
+Benjamin: Ava 80 Charlotte 20 Ella 80 Grace 10 Zoe
+Daniel: Abigail 70 Elizabeth 90 Emily 90 Mia 70 Sophia
+Ethan: Amelia 40 Chloe 60 Hannah 70 Lily 40 Olivia
+Gabriel: Ava 80 Emily 90 Grace 10 Natalie 20 Zoe
+Isaac: Amelia 40 Charlotte 20 Ella 80 Hannah 70 Sophia
+James: Abigail 70 Elizabeth 90 Isabella 30 Lily 40 Zoe
+Liam: Ava 80 Chloe 60 Emily 90 Mia 70 Olivia
+Mason: Amelia 40 Charlotte 20 Ella 80 Grace 10 Zoe
