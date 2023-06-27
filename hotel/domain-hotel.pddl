@@ -18,7 +18,6 @@
 
     (:functions
         (custo ?q - quarto) - number
-        (afinidade ?p1 ?p2 - pessoa) - number
         (total-cost) - number
     )
 
@@ -77,8 +76,6 @@
             (alojada ?p1)
             (alojada ?p2)
             (increase (total-cost) (custo ?q))
-            (increase (total-cost) (afinidade ?p1 ?p2))
-            (increase (total-cost) (afinidade ?p2 ?p1))
             (ocupado ?q)
         )
     )
@@ -112,13 +109,6 @@
             (alojada ?p3)
             (ocupado ?q)
             (increase (total-cost) (custo ?q))
-            (increase (total-cost) (afinidade ?p1 ?p2))
-            (increase (total-cost) (afinidade ?p1 ?p2))
-            (increase (total-cost) (afinidade ?p1 ?p3))
-            (increase (total-cost) (afinidade ?p2 ?p1))
-            (increase (total-cost) (afinidade ?p2 ?p3))
-            (increase (total-cost) (afinidade ?p3 ?p1))
-            (increase (total-cost) (afinidade ?p3 ?p2))
         )
     )
 
@@ -157,6 +147,7 @@
             (alojada ?p3)
             (alojada ?p4)
             (ocupado ?q)
+            (increase (total-cost) (custo ?q))
         )
     )
 )

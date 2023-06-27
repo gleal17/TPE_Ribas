@@ -101,8 +101,8 @@ int main()
     // aqui acabam os objetos
 
     printf("(:init\n");
-    for (int i = 0; i < homens.size(); i++)
-        cout << "(homem " << homens[i] << ")\n";
+    // for (int i = 0; i < homens.size(); i++)
+    //     cout << "(homem " << homens[i] << ")\n";
 
     // for (int i = 0; i < mulheres.size(); i++)
     // cout << "(mulher " << mulheres[i] << ")\n";
@@ -114,17 +114,17 @@ int main()
     {
         for (int j = 0; j < homens.size(); j++)
         {
+            if(homens[i] == homens[j])
+                continue;
             dupla.first = homens[i];
             dupla.second = homens[j];
             if (afinidadeGeral.find(dupla) != afinidadeGeral.end())
             {
-                cout << "(= (afinidade " << homens[i] << " " << homens[j] << ") " << afinidadeGeral[dupla] << ")\n";
+                if (afinidadeGeral[dupla] >= 50)
+                    cout << "(podeJunto " << homens[i] << " " << homens[j] << ")\n";
             }
             else
-            {
-                cout << "(= (afinidade " << homens[i] << " " << homens[j] << ") "
-                     << "50)\n";
-            }
+                cout << "(podeJunto " << homens[i] << " " << homens[j] << ")\n";
         }
         for (int j = 0; j < mulheres.size(); j++)
         {
@@ -132,13 +132,11 @@ int main()
             dupla.second = mulheres[j];
             if (afinidadeGeral.find(dupla) != afinidadeGeral.end())
             {
-                cout << "(= (afinidade " << homens[i] << " " << mulheres[j] << ") " << afinidadeGeral[dupla] << ")\n";
+                if (afinidadeGeral[dupla] >= 50)
+                    cout << "(podeJunto " << homens[i] << " " << mulheres[j] << ")\n";
             }
             else
-            {
-                cout << "(= (afinidade " << homens[i] << " " << mulheres[j] << ") "
-                     << "0)\n";
-            }
+                cout << "(podeJunto " << homens[i] << " " << mulheres[j] << ")\n";
         }
     }
 
@@ -150,27 +148,25 @@ int main()
             dupla.second = homens[j];
             if (afinidadeGeral.find(dupla) != afinidadeGeral.end())
             {
-                cout << "(= (afinidade " << mulheres[i] << " " << homens[j] << ") " << afinidadeGeral[dupla] << ")\n";
+                if (afinidadeGeral[dupla] >= 50)
+                    cout << "(podeJunto " << mulheres[i] << " " << homens[j] << ")\n";
             }
             else
-            {
-                cout << "(= (afinidade " << mulheres[i] << " " << homens[j] << ") "
-                     << "50)\n";
-            }
+                cout << "(podeJunto " << mulheres[i] << " " << homens[j] << ")\n";
         }
         for (int j = 0; j < mulheres.size(); j++)
         {
+            if(mulheres[i] == mulheres[j])
+                continue;
             dupla.first = mulheres[i];
             dupla.second = mulheres[j];
             if (afinidadeGeral.find(dupla) != afinidadeGeral.end())
             {
-                cout << "(= (afinidade " << mulheres[i] << " " << mulheres[j] << ") " << afinidadeGeral[dupla] << ")\n";
+                if (afinidadeGeral[dupla] >= 50)
+                    cout << "(podeJunto " << mulheres[i] << " " << mulheres[j] << ")\n";
             }
             else
-            {
-                cout << "(= (afinidade " << mulheres[i] << " " << mulheres[j] << ") "
-                     << "0)\n";
-            }
+                cout << "(podeJunto " << mulheres[i] << " " << mulheres[j] << ")\n";
         }
     }
 
@@ -192,7 +188,7 @@ int main()
         default:
             break;
         }
-    printf("(= (total-cost) 0)\n(= (total-afinidade) 0)");
+    printf("(= (total-cost) 0)\n");
     cout << ")\n";
     // aqui acaba o estado inicial
     printf("(:goal\n(and\n");
@@ -202,7 +198,7 @@ int main()
     for (int i = 0; i < mulheres.size(); i++)
         cout << "(alojada " << mulheres[i] << ")\n";
     printf(")\n)\n");
-    printf("(:metric minimize (+ (total-cost) (* (total-afinidade) -1))))");
+    printf("(:metric minimize (total-cost)))");
 
     return 0;
 }
