@@ -15,7 +15,7 @@ Joao Miguel Daniel
 Emily Luna Jessica Olivia
 1 C
 Joao Emily
-10
+9
 Joao : Miguel 30 Daniel 60 Olivia 80
 Miguel : Emily 90 Luna 70
 Daniel : Joao 50 Miguel 40 Emily 30

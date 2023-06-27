@@ -25,7 +25,7 @@ Ben Sophia
 Charlie Olivia
 David Ava
 Ethan Lily
-15
+26
 Adam : Ben 70 Charlie 50 Olivia 80
 Ben : Adam 60 Charlie 70 Emily 90
 Charlie : Adam 40 Ben 80 Emily 50
