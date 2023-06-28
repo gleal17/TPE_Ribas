@@ -56,6 +56,7 @@
             (alojada ?h)
             (alojada ?m)
             (casalAlojado ?h ?m)
+            (casalAlojado ?m ?h)
             (ocupado ?q)
             (increase (total-cost) (custo ?q))
         )
