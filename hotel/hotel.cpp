@@ -135,8 +135,6 @@ int main()
                 if (afinidadeGeral[dupla] >= 50)
                     cout << "(podeJunto " << homens[i] << " " << mulheres[j] << ")\n";
             }
-            else
-                cout << "(podeJunto " << homens[i] << " " << mulheres[j] << ")\n";
         }
     }
 
@@ -151,8 +149,6 @@ int main()
                 if (afinidadeGeral[dupla] >= 50)
                     cout << "(podeJunto " << mulheres[i] << " " << homens[j] << ")\n";
             }
-            else
-                cout << "(podeJunto " << mulheres[i] << " " << homens[j] << ")\n";
         }
         for (int j = 0; j < mulheres.size(); j++)
         {
@@ -197,6 +193,8 @@ int main()
 
     for (int i = 0; i < mulheres.size(); i++)
         cout << "(alojada " << mulheres[i] << ")\n";
+    for (int i=0; i < casais.size(); i++)
+        cout << "(casalAlojado " << casais[i].first << " " << casais[i].second << ")\n";
     printf(")\n)\n");
     printf("(:metric minimize (total-cost)))");
 

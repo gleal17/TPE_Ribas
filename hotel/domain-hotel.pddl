@@ -14,6 +14,7 @@
         (alojada ?p - pessoa)
         (ocupado ?q - quarto)
         (podeJunto ?p1 ?p2 - pessoa)
+        (casalAlojado ?p1 ?p2 - pessoa)
     )
 
     (:functions
@@ -48,10 +49,13 @@
                 (quartoTriplo ?q)
                 (quartoQuadruplo ?q)
             )
+            (not (casalAlojado ?h ?m))
+            (not (casalAlojado ?m ?h))
         )
         :effect (and
             (alojada ?h)
             (alojada ?m)
+            (casalAlojado ?h ?m)
             (ocupado ?q)
             (increase (total-cost) (custo ?q))
         )
