@@ -2,12 +2,12 @@
 (alocarcasal quarto13 ava david)
 (alocarcasal quarto17 ben sophia)
 (alocarcasal quarto5 charlie olivia)
-(alocarcasal quarto10 ethan lily)
-(alocardupla quarto14 felix gabriel)
-(alocardupla quarto2 mia natalie)
+(alocarcasal quarto9 ethan lily)
+(alocardupla quarto10 felix gabriel)
+(alocardupla quarto14 mia natalie)
 (alocartrio henry isaac jack quarto11)
 (alocartrio olivy sara victoria quarto15)
-; cost = 1210 (general cost)
+; cost = 1140 (general cost)
 
 ; pos 1
-; solução após 300s.
+; solução após 600s.

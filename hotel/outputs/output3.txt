@@ -9,4 +9,4 @@
 ; cost = 1060 (general cost)
 
 pos1
-após 300s
+após 600s

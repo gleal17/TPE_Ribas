@@ -8,13 +8,12 @@
 (alocarcasal quarto18 emily henry)
 (alocarcasal quarto2 emma isaac)
 (alocarcasal quarto6 grace jack)
-(alocardupla quarto11 hannah isabella)
-(alocardupla quarto15 lily madison)
+(alocartrio hannah isabella lily quarto11)
+(alocardupla quarto15 madison mia)
 (alocardupla quarto19 liam mason)
-(alocardupla quarto3 noah oliver)
-(alocarpessoa quarto7 mia)
-(alocarpessoa quarto12 william)
-; cost = 2490 (general cost)
+(alocartrio noah oliver william quarto3)
+; cost = 2040 (general cost)
+~                             
 
 ;realizado na pos1
-;solução após os 300s
+;solução após os 600s

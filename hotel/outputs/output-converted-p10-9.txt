@@ -1,0 +1,7 @@
+(alocarpessoa quarto1 o1)
+(alocardupla quarto2 o5 o7)
+(alocartrio o2 o4 o6 quarto3)
+(alocarquarteto o0 o3 o8 o9 quarto4)
+; cost = 400 (general cost)
+
+INFO     Planner time: 1.14s
