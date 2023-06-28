@@ -6,7 +6,7 @@ Q 1000
 Jose Moises
 2 F
 Maria Sara
-1 C
+2 C
 Maria Jose
 Sara Moises
 0

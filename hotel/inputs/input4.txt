@@ -1,14 +1,18 @@
-3
+5
 C 150
 T 1000
 D 360
+D 400
+Q 500
 2 M
 Jose Judas
 6 F
 Maria Sara Ana Ester Jesabel Pricila
 1 C
 Maria Jose
-6
+8
+Judas : Jesabel 55
+Jesabel : Judas 55
 Maria : Judas 0 Jesabel 0
 Sara : Judas 0 Jesabel 0
 Ana : Judas 0 Jesabel 0
