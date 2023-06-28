@@ -1,0 +1,6 @@
+(alocarcasal quarto1 jose maria)
+(alocardupla quarto3 jesabel judas)
+(alocarquarteto ana ester pricila sara quarto5)
+; cost = 1010 (general cost)
+
+ Planner time: 0.13s

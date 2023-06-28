@@ -1,0 +1,7 @@
+(alocarcasal quarto1 jose maria)
+(alocarcasal quarto2 moises sara)
+; cost = 1000 (general cost)
+~                                  
+;realizado na pos1
+
+INFO     Planner time: 0.03s

@@ -1,0 +1,13 @@
+(alocarcasal quarto1 adam emily)
+(alocarcasal quarto13 ava david)
+(alocarcasal quarto17 ben sophia)
+(alocarcasal quarto5 charlie olivia)
+(alocarcasal quarto10 ethan lily)
+(alocardupla quarto14 felix gabriel)
+(alocardupla quarto2 mia natalie)
+(alocartrio henry isaac jack quarto11)
+(alocartrio olivy sara victoria quarto15)
+; cost = 1210 (general cost)
+
+; pos 1
+; solução após 300s.

@@ -1,0 +1,7 @@
+1(alocarpessoa quarto1 judas)
+(alocarquarteto joao lucas marcos mateus quarto4)
+(alocartrio felipe pedro tiago quarto5)
+; cost = 1450 (general cost)
+~                           
+
+INFO     Planner time: 0.61s

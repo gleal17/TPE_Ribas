@@ -1,0 +1,20 @@
+(alocarcasal quarto1 abigail adam)
+(alocarcasal quarto13 amelia benjamin)
+(alocarcasal quarto17 ava charlie)
+(alocarcasal quarto5 charlotte daniel)
+(alocarcasal quarto9 chloe ethan)
+(alocarcasal quarto10 elizabeth felix)
+(alocarcasal quarto14 ella gabriel)
+(alocarcasal quarto18 emily henry)
+(alocarcasal quarto2 emma isaac)
+(alocarcasal quarto6 grace jack)
+(alocardupla quarto11 hannah isabella)
+(alocardupla quarto15 lily madison)
+(alocardupla quarto19 liam mason)
+(alocardupla quarto3 noah oliver)
+(alocarpessoa quarto7 mia)
+(alocarpessoa quarto12 william)
+; cost = 2490 (general cost)
+
+;realizado na pos1
+;solução após os 300s

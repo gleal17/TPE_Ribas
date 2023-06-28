@@ -1,0 +1,7 @@
+(alocarcasal quarto1 ana pedro)
+(alocardupla quarto2 bento charlie)
+(alocarquarteto bruna lilian olivia sophia quarto4)
+; cost = 500 (general cost)
+
+;soluçao após 0.30s
+;pos1

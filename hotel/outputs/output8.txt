@@ -1,0 +1,8 @@
+(alocarcasal quarto1 jose maria)
+(alocarpessoa quarto4 jesabel)
+(alocardupla quarto3 jesus judas)
+(alocarquarteto ana ester pricila sara quarto5)
+; cost = 1570 (general cost)
+
+;realizado na pos1
+INFO     Planner time: 0.34s

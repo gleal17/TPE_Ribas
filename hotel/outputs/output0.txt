@@ -1,0 +1,8 @@
+(alocarpessoa quarto1 daniel)
+(alocarpessoa quarto5 miguel)
+(alocarcasal quarto9 emily joao)
+(alocartrio jessica luna olivia quarto3)
+; cost = 620 (general cost)
+
+;realizado na pos1
+;solução após os 0.47s

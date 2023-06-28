@@ -1,0 +1,12 @@
+(alocarcasal quarto1 adam emily)
+(alocarcasal quarto13 ava david)
+(alocarcasal quarto5 ben sophia)
+(alocarcasal quarto9 charlie olivia)
+(alocarcasal quarto10 ethan lily)
+(alocardupla quarto14 isaac natalie)
+(alocartrio mia olivy victoria quarto11)
+(alocarquarteto felix gabriel henry jack quarto12)
+; cost = 1060 (general cost)
+
+pos1
+após 300s
