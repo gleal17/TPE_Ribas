@@ -10,7 +10,7 @@ Jose Judas Jesus
 Maria Sara Ana Ester Jesabel Pricila
 1 C
 Maria Jose
-7
+6
 Maria : Judas 0 Jesabel 0
 Sara : Judas 0 Jesabel 0
 Ana : Judas 0 Jesabel 0

@@ -4,11 +4,11 @@ C 150
 T 1000
 Q 360
 Q 990
-7 M
+8 M
 Pedro Tiago Joao Mateus Lucas Marcos Felipe Judas
 0 F
 0 C
-6
+7
 Pedro : Judas 0
 Tiago : Judas 0
 Joao : Judas 0
