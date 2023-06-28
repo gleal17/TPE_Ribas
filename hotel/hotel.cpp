@@ -101,12 +101,6 @@ int main()
     // aqui acabam os objetos
 
     printf("(:init\n");
-    // for (int i = 0; i < homens.size(); i++)
-    //     cout << "(homem " << homens[i] << ")\n";
-
-    // for (int i = 0; i < mulheres.size(); i++)
-    // cout << "(mulher " << mulheres[i] << ")\n";
-
     for (int i = 0; i < casais.size(); i++)
         cout << "(casal " << casais[i].first << " " << casais[i].second << ")\n";
 
